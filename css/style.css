@@ -591,6 +591,7 @@ color: var(--first-title-color);
 }
 .feature-element:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow var(--transition-cubic);
 }
 .feature-element:nth-child(3n){
     margin-right: 0px;
@@ -599,6 +600,7 @@ color: var(--first-title-color);
     margin-bottom: 0px;
 }
 .tehno-next-wrap{
+height: 294px;
 position: relative;
 overflow: hidden;
 }
