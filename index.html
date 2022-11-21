@@ -19,7 +19,7 @@
             <nav class="header-nav-flex">
                 <p class="logo"> <span class="logo-item">Web</span>Studio</p>
                 <ul class="header-nav-list">
-                    <li class="header-item"><a class="header-nav" href="./index.html">Студія</a></li>
+                    <li class="header-item"><a class="header-nav header-nav-item" href="./index.html">Студія</a></li>
                     <li class="header-item"><a class="header-nav" href="./portfolio.html">Портфоліо</a></li>
                     <li class="header-item"><a class="header-nav" href="">Контакти </a></li>
                 </ul>
@@ -42,7 +42,7 @@
             <section class="main-fon">
                 <div class="container hero-list">
                 <h1 class="main-title">Ефективні рішення для <br> вашого бізнесу</h1>
-                <button class="main-button" type="button">Замовити послугу</button>
+                <button class="main-button"  type="button" data-modal-open>Замовити послугу</button>
                 </div>
             </section>
 
@@ -112,13 +112,16 @@
             
                 <ul class="work-list">
                     <li class="work-item">
-                        <img src="./images/box1.jpg" alt="клавиатура" width="370">
+                        <img class="work-item-name" src="./images/box1.jpg" alt="клавиатура" width="370">
+                        <p class="work-name">Десктопні додатки</p>
                     </li>
                     <li class="work-item">
-                        <img src="./images/box2.jpg" alt="телефон" width="370">
+                        <img class="work-item-name" src="./images/box2.jpg" alt="телефон" width="370">
+                        <p class="work-name">Мобільні додатки</p>
                     </li>
                     <li class="work-item">
-                        <img src="./images/box3.jpg" alt="планшет" width="370">
+                        <img class="work-item-name" src="./images/box3.jpg" alt="планшет" width="370">
+                        <p class="work-name">Дизайнерські рішення</p>
                     </li>
                 </ul>
              </div>
@@ -267,7 +270,7 @@
                 </ul>
             </div>
             </section>
-
+<!-- -------------------Постійні клієнти------------------------------------- -->
             <section class="client">
                 <div class="container">
                     <h2 class="main-title-list title-soc">Постійні клієнти</h2>
@@ -368,6 +371,17 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="knopka" width="11" height="11">
+                    <use href="./images/icons.svg#icon-knopka"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
