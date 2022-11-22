@@ -530,7 +530,6 @@ transition: fill var(--transition-cubic) ;
      padding-top: 94px;
     padding-bottom: 94px;
 }
- 
 .portfolio .portfolio-nav :hover,
 .portfolio .portfolio-nav :focus {
 border-radius: 4px;
