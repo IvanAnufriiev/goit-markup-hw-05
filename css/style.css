@@ -530,8 +530,8 @@ transition: fill var(--transition-cubic) ;
      padding-top: 94px;
     padding-bottom: 94px;
 }
-.portfolio .portfolio-nav :hover,
-.portfolio .portfolio-nav :focus {
+.portfolio .portfolio-nav:hover,
+.portfolio .portfolio-nav:focus {
 border-radius: 4px;
 color: var(--first-color);
 background-color: var(--logo-item-color);
