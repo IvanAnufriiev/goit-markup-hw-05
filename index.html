@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" >    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -399,7 +399,7 @@
             <div class="modal-list">
                 <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
                 <form class="modal-form">
-                    <label for="user-name">Ім'я</label>
+                    <label for="user-name" class="input-text-name">Ім'я</label>
                     <div class="input-wrap">
                         <input type="text"
                         class="modal-input"
@@ -410,7 +410,7 @@
                         </svg>
                     </div> 
                    
-                    <label for="input-phone">Телефон</label>
+                    <label for="input-phone" class="input-text-name">Телефон</label>
                     <div class="input-wrap">
                         <input 
                         type="text" 
@@ -422,9 +422,9 @@
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
-                    <label for="input-email">Пошта</label>
+                    <label for="input-email" class="input-text-name">Пошта</label>
                     <div class="input-wrap">
-                    <input 
+                    <input
                     type="text" 
                     class="modal-input"
                     id="input-email">
@@ -433,23 +433,27 @@
                     </svg>
                     </div>
                    
-                    <label for="modal-coment">Коментар</label>
+                    <label for="modal-coment" class="input-text-name">Коментар</label>
                     <textarea name="modal-coment" id="modal-coment" class="modal-coments " placeholder="Введіть текст"></textarea>
                     <div>
-                        <input type="checkbox" name="policy" id="policy">
+                        <input
+                         class="modal-check hide" 
+                         type="checkbox" 
+                         name="policy" 
+                         id="policy">
                         <label for="policy" class="check-text" >
+                            <span>
                             <svg class="check-icon" width="16" height="15">
                                 <use href="./images/icons.svg#icon-Vector"></use>
                             </svg>
-                            Погоджуюся з розсилкою та приймаю</label>
+                            </span>
+                            Погоджуюся з розсилкою та приймаю 
+                        <a href="#">Умови договору</a>
+                    </label>
                     </div>
-                    <!-- <label>
-                        <input class="checkbox" type="text">
-                        <span class="checkbox-icon"></span>
-                        <span class="checkbox-label">Погоджуюся з розсилкою та приймаю </span>
-                        <a class="checkbox-link" href="#">Умови договору</a>
-                    </label> -->
+                    <div class="modal-button-list">
                     <button type="submit" class="modal-button">Відправити</button>
+                    </div>
                 </form>
                 
             </div>
